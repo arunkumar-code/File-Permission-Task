@@ -1,0 +1,18 @@
+vagrant@ubuntu-bionic:~/my_folder$ cd /home
+vagrant@ubuntu-bionic:/home$ ls
+ubuntu  vagrant
+vagrant@ubuntu-bionic:/home$ sudo touch demo.txt
+vagrant@ubuntu-bionic:/home$ ls
+demo.txt  ubuntu  vagrant
+vagrant@ubuntu-bionic:/home$ ls -l
+total 8
+-rw-r--r-- 1 root    root       0 Sep 27 13:32 demo.txt
+drwxr-xr-x 3 ubuntu  ubuntu  4096 Sep 24 05:02 ubuntu
+drwxr-xr-x 8 vagrant vagrant 4096 Sep 27 12:28 vagrant
+vagrant@ubuntu-bionic:/home$ sudo chmod 764 demo.txt
+vagrant@ubuntu-bionic:/home$ ls -l
+total 8
+-rwxrw-r-- 1 root    root       0 Sep 27 13:32 demo.txt
+drwxr-xr-x 3 ubuntu  ubuntu  4096 Sep 24 05:02 ubuntu
+drwxr-xr-x 8 vagrant vagrant 4096 Sep 27 12:28 vagrant
+vagrant@ubuntu-bionic:/home$
